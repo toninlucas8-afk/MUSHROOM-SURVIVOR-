@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Mushroom Survivor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div id="menu" class="overlay">
+  <h1 class="title">MUSHROOM<br>SURVIVOR</h1>
+  <p class="sub">Sopravvivi al viaggio. Le armi sparano da sole.</p>
+  <button id="btn-start" class="big">GIOCA</button>
+  <div class="help">
+    <p><b>WASD / Frecce</b> per muoverti &middot; su mobile trascina il dito</p>
+    <p><b>P / Esc</b> pausa &middot; <b>M</b> musica on/off &middot; <b>1 2 3</b> scegli potenziamento</p>
+  </div>
+  <p id="best" class="best"></p>
+</div>
+
+<div id="levelup" class="overlay hidden">
+  <h2 class="glow">LIVELLO SUPERIORE!</h2>
+  <p class="sub">Scegli un potenziamento</p>
+  <div id="cards"></div>
+</div>
+
+<div id="pause" class="overlay hidden">
+  <h2 class="glow">PAUSA</h2>
+  <div id="pause-build" class="build"></div>
+  <button id="btn-resume" class="big">RIPRENDI</button>
+</div>
+
+<div id="gameover" class="overlay hidden">
+  <h2 class="glow">IL VIAGGIO È FINITO</h2>
+  <div id="stats" class="stats"></div>
+  <button id="btn-restart" class="big">RIPROVA</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
